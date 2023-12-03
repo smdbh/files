@@ -1,0 +1,69 @@
+{
+    "editor.mouseWheelZoom": true,
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#FFFFFF"
+        // "tab.activeBackground": "#dddddd"
+    },
+    "workbench.panel.defaultLocation": "right",
+
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen"
+    ],
+
+    // git
+    "git.ignoreMissingGitWarning": true,
+
+    "tabnine.experimentalAutoImports": false,
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "editor.fontLigatures": false,
+    "git.autofetch": true,
+    
+    // c++
+    "C_Cpp.doxygen.generatedStyle": "/**",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.minimap.enabled": false,
+    // "redhat.telemetry.enabled": false,
+    "clangd.arguments": [
+        "-log=verbose",
+        "-pretty",
+        "--completion-style=bundled",
+        "--background-index",
+        "--compile-commands-dir=${workspaces}/../build"
+    ],
+    "clangd.fallbackFlags": [
+        // "-std=c++17",
+        "-I/usr/include/c++/7",
+        "-I/usr/include/eigen3/",
+        "-I/opt/ros/melodic/include"
+    ],
+    "editor.inlayHints.enabled": "off",
+
+    "C_Cpp.clang_format_style": "Mozilla",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "clangd.restartAfterCrash": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+
+    // todo tree
+    "todo-tree.regex.regex": "(//).* ($TAGS): .*(\\n\\s*//\\s{2,}.*)*",
+    "todo-tree.general.tags": [
+        "BUG",
+        "FIXME",
+        "TODO",
+        "[ ]",
+        "[x]"
+    ]
+
+}
